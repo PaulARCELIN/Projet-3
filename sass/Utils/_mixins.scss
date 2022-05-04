@@ -1,0 +1,33 @@
+@mixin padding {
+    padding: 20px 65px 20px 65px;
+}
+
+@mixin margin_offre {
+    margin: 20px;
+}
+
+@mixin zoom {
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.15);
+        opacity: 0.9;
+    }
+}
+
+@keyframes remplissage {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@mixin coeur {
+    &:hover, &:active {
+        background: $background-deg;
+        mask-image: url(../../icones/heart-solid.svg);
+        animation: remplissage 1.5s ease-out;
+    }
+}

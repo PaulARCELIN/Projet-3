@@ -1,0 +1,14 @@
+.restaurants {
+    @include padding;
+    background-color: $color-quartary;
+    & section {
+        display: flex;
+        flex-direction: column;
+        @media screen and (min-width : 630px)
+        {
+            justify-content: space-around;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+}

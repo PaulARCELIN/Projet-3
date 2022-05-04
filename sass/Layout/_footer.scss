@@ -1,0 +1,20 @@
+.footer {
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    @include padding;
+    font-size: large;
+    &__logo {
+        filter: invert(1);
+        margin-bottom: 20px;
+    }
+    & a {
+        color: $color-white;
+        text-decoration: none;
+        margin-bottom: 10px;
+    }
+    & i {
+        margin-right: 5px;
+        width: 23px;
+    }
+}

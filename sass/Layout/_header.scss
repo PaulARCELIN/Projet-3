@@ -1,0 +1,18 @@
+header {
+    margin: 20px 0px 20px 0px;
+}
+
+.header {
+    &__retour {
+        color: $color-black;
+        position: absolute;
+        top: 45px;
+        left: 40px;
+        scale: 250%;
+    }
+    &__logo {
+        text-align: center;
+        margin-bottom: 20px;
+        scale: 0.7;
+    }
+}
