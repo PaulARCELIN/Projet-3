@@ -1,17 +1,23 @@
 .fonctionnement {
     @include padding;
-
-    
+          
     &__fonction {
         padding: 20px;
         border-radius: 50px;
         font-size: x-large;
         margin-bottom: 20px;
         border: none;
+        max-width: 655px;
         box-shadow: 5px 5px 10px $color-secondary;
         transition: all 0.5s ease-in-out;
         cursor: pointer;
         position: relative;
+        @media screen and (min-width: 787px)
+        {
+            margin: auto;
+            margin-bottom: 20px;
+            min-width: 655px;
+        }
         & i {
             scale: 200%;
             color: gray;

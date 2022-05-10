@@ -83,8 +83,13 @@
             width: 80%;
             max-height: 115px;
             @include margin_offre;
-            overflow: clip ellipsis;
-            @media screen and (max-width : 535px)
+            text-overflow: ellipsis;
+            & p, h3 {
+                height: min-content;
+                width: 100%;
+                text-overflow: ellipsis;
+                }
+            /* @media screen and (max-width : 535px)
             {
                 width: 50%;
                 font-size: small;
@@ -94,7 +99,7 @@
                 text-overflow: clip ellipsis;
                 overflow: hidden;
                 }
-            }
+            } */
         }
         &__prix {
             @include margin_offre;

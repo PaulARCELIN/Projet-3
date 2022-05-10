@@ -235,10 +235,18 @@ form div {
   font-size: x-large;
   margin-bottom: 20px;
   border: none;
+  max-width: 655px;
   box-shadow: 5px 5px 10px #FF79DA;
   transition: all 0.5s ease-in-out;
   cursor: pointer;
   position: relative;
+}
+@media screen and (min-width: 787px) {
+  .fonctionnement__fonction {
+    margin: auto;
+    margin-bottom: 20px;
+    min-width: 655px;
+  }
 }
 .fonctionnement__fonction i {
   scale: 200%;
@@ -399,19 +407,23 @@ form div {
   width: 80%;
   max-height: 115px;
   margin: 20px;
-  overflow: clip ellipsis;
+  text-overflow: ellipsis;
+  /* @media screen and (max-width : 535px)
+  {
+      width: 50%;
+      font-size: small;
+      & p, h3 {
+      height: min-content;
+      width: 100%;
+      text-overflow: clip ellipsis;
+      overflow: hidden;
+      }
+  } */
 }
-@media screen and (max-width: 535px) {
-  .menu__offre__description {
-    width: 50%;
-    font-size: small;
-  }
-  .menu__offre__description p, .menu__offre__description h3 {
-    height: min-content;
-    width: 100%;
-    text-overflow: clip ellipsis;
-    overflow: hidden;
-  }
+.menu__offre__description p, .menu__offre__description h3 {
+  height: min-content;
+  width: 100%;
+  text-overflow: ellipsis;
 }
 .menu__offre__prix {
   margin: 20px;
