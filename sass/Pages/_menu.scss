@@ -3,10 +3,17 @@
     max-height: 300px;
     min-height: 300px;
     overflow: hidden;
+        
     & img {
-        max-width: 100%;
-        height: 100%;
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        
     }
+}
+
+main {
+    background-color: $color-quartary;
 }
 
 @keyframes anim-offre {
@@ -24,6 +31,8 @@
     @include padding;
     border-radius: 50px 50px 0px 0px;
     background-color: $color-quartary;
+    position: relative;
+    top: -50px;
     &__titre {
         display: flex;
         justify-content: space-between;
@@ -89,17 +98,6 @@
                 width: 100%;
                 text-overflow: ellipsis;
                 }
-            /* @media screen and (max-width : 535px)
-            {
-                width: 50%;
-                font-size: small;
-                & p, h3 {
-                height: min-content;
-                width: 100%;
-                text-overflow: clip ellipsis;
-                overflow: hidden;
-                }
-            } */
         }
         &__prix {
             @include margin_offre;
