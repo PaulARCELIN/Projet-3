@@ -9,10 +9,19 @@ header {
         top: 45px;
         left: 40px;
         scale: 250%;
+        @media  screen and (max-width: 410px)
+        {
+            scale: 200%;
+            left: 20px;
+        }
     }
     &__logo {
         text-align: center;
         margin-bottom: 20px;
         scale: 0.7;
+        @media  screen and (max-width: 410px)
+        {
+            scale: 0.6;
+        }
     }
 }

@@ -8,7 +8,6 @@
         width: 100%;
         height: 300px;
         object-fit: cover;
-        
     }
 }
 
@@ -54,7 +53,7 @@ main {
             /* Recadrage du coeur sur petite résolutions */
             @media screen and (max-width : 540px)
             {
-                right: -15%;
+                right: -1%;
             }
             @include coeur;
             &:hover {
@@ -67,14 +66,23 @@ main {
     }
     & h4 {
         text-transform: uppercase;
-        text-decoration: underline;
+        height: 25px;
+        font-weight: 100;
+        position: relative;
+        &::after {
+            content: "";
+            width: 40px;
+            border: 2px solid $color-tertiary;
+            position: absolute;
+            top: 23px;
+            left: 0px;
+        }
     }
     
     &__offre {
         background-color: $color-white;
         border-radius: 30px; 
-        max-height: 115px;   
-
+        max-height: 115px;  
         display: flex;
         overflow: hidden;
         align-items: center;
@@ -89,22 +97,31 @@ main {
             }
         }       
         &__description {
-            width: 80%;
+            
+            width: 70%;
             max-height: 115px;
+            font-weight: 100;
             @include margin_offre;
-            text-overflow: ellipsis;
-            & p, h3 {
-                height: min-content;
+            transition: all 0.5s ease-in-out;
+
+            & p, h3 {               
                 width: 100%;
+                font-weight: 0;
+                white-space: nowrap;
+                overflow: hidden;
                 text-overflow: ellipsis;
-                }
+                direction: ltr;
+            }
         }
         &__prix {
             @include margin_offre;
+            width: 20%;
             transform: translateX(100px);
             transition: all 0.5s ease-in-out;
             position: absolute;
             right: 100px;
+            text-align: right;
+            
         }
         &__check {
             background-color: $color-tertiary;
@@ -128,6 +145,10 @@ main {
                 transform: rotate(180deg);
             }
         }
+        /* Réduction de la largeur de la description */
+        &:hover .menu__offre__description {
+            width: calc(70% - 100px);
+        }
         &:hover .menu__offre__check {
             transform: translateX(0);
             & i {
@@ -150,7 +171,7 @@ main {
             width: 28%;
             min-width: 320px;
             &__description {
-                width: 40%;
+                width: 70%;
             }
         }
         & h4 {
