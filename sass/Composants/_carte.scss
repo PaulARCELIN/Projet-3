@@ -30,12 +30,11 @@ h3 {
         &__coeur {
             width: 40px;
             height: 40px;
-            background-image: url(../../icones/heart-regular.svg);
+            background-image: url(../icones/heart-regular.svg);
             background-repeat: no-repeat;
             position: absolute;
             right: 23px;
             top: 15%;
-            scale: 90%;
             @include coeur;
         }
     }

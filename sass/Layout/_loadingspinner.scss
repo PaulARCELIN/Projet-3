@@ -1,5 +1,5 @@
 $loading-anim-dur : 2s;
-$loading-anim-delay : 1.5s;
+$loading-anim-delay : 2.5s;
 
 @keyframes loading-body {
   0% {
@@ -50,7 +50,7 @@ $loading-anim-delay : 1.5s;
 }
 
 .loading {
-  scale: 160%;
+  transform: scale(1.6);
   text-align: center;
   transform-origin: center;
   position: absolute;
@@ -63,7 +63,7 @@ $loading-anim-delay : 1.5s;
     justify-content: space-between;
     animation: loading-arrows linear 1.5s infinite;
      & i {
-      scale: 200%;
+      transform: scale(2);
       /* animation: jumping-arrows 1s infinite alternate-reverse; */
     }
   }

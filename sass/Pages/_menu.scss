@@ -41,15 +41,14 @@ main {
             font-family: 'Shrikhand-Regular', Arial, Helvetica, sans-serif;
         }    
         &__coeur {
-            width: 36px;
-            height: 36px;
-            background-image: url(../../icones/heart-regular.svg);
+            width: 30px;
+            height: 30px;
+            background-image: url(../icones/heart-regular.svg);
             background-repeat: no-repeat;
             background-position: center;
             position: absolute;
             right: 5%;
             top: 0%;
-            scale: 90%;
             /* Recadrage du coeur sur petite résolutions */
             @media screen and (max-width : 540px)
             {
@@ -136,7 +135,6 @@ main {
             justify-content: center;
             align-items: center;
             & i {
-                scale: 150%;
                 color: $color-tertiary;
                 background-color: $color-white;
                 padding: 10px;

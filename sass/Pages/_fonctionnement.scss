@@ -1,5 +1,5 @@
 .fonctionnement {
-    @include padding;
+    padding: 20px 65px 20px 65px;
           
     &__fonction {
         padding: 20px;
@@ -20,29 +20,30 @@
             min-width: 655px;
         }
         & i {
-            scale: 200%;
+            /* scale: 200%; */
             color: gray;
             display: inline;
         }
-        & p {
+        &__num {
+            display: block;
             background: $background_deg;
             color: $color-white;
             font-size: large;
             padding: 16px 22px 16px 22px;
             border-radius: 50px;
             margin-right: 10px;
-            display: inline;
+            
             position: absolute;
             left: -2%;
-            top: -15%;
+            top: 8%;
             @media screen and (max-width: 535px)
             {
                 font-size: medium;
                 padding: 12px 17px 12px 17px;
-                top: -7%;
+                top: 16%;
             }
         }
-        & div {
+        &__option {
             display: inline;
             margin-left: 15px;
             @media screen and (max-width: 535px)
