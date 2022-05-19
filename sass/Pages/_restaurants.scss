@@ -4,7 +4,7 @@
     & section {
         display: flex;
         flex-direction: column;
-        @media screen and (min-width : 630px)
+        @media screen and (min-width : 560px)
         {
             justify-content: space-around;
             flex-direction: row;

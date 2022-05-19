@@ -294,6 +294,17 @@ form div {
     top: 16%;
   }
 }
+@media screen and (max-width: 420px) {
+  .fonctionnement__fonction__num {
+    padding: 6px 10px 6px 10px;
+    top: 22%;
+  }
+}
+@media screen and (max-width: 370px) {
+  .fonctionnement__fonction__num {
+    top: 30%;
+  }
+}
 .fonctionnement__fonction__option {
   display: inline;
   margin-left: 15px;
@@ -325,7 +336,7 @@ form div {
   display: flex;
   flex-direction: column;
 }
-@media screen and (min-width: 630px) {
+@media screen and (min-width: 560px) {
   .restaurants section {
     justify-content: space-around;
     flex-direction: row;
