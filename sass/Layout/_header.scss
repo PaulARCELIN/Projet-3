@@ -8,11 +8,20 @@ header {
         position: absolute;
         top: 45px;
         left: 40px;
-        scale: 250%;
+        transform: scale(2.5);
+        @media  screen and (max-width: 410px) /* Recadrage du header sur les très petites résolutions */
+        {
+            transform: scale(2);
+            left: 20px;
+        }
     }
     &__logo {
         text-align: center;
         margin-bottom: 20px;
-        scale: 0.7;
+        transform: scale(0.7);
+        @media  screen and (max-width: 410px) /* Recadrage du header sur les très petites résolutions */
+        {
+            transform: scale(0.6);
+        }
     }
 }

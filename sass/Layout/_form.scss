@@ -4,9 +4,15 @@
         height: 100px;
         background-color: $color-tertiary;
         background: linear-gradient(to top, $color-tertiary, $color-tertiary 93%, $color-secondary 99%);
-        text-align: center;
         font-size: x-large;
         border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0px;
+        & i {
+            margin-right: 10px;
+        }
     }
     &__btn {
         @include btn
