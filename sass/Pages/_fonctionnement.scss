@@ -8,7 +8,7 @@
         margin-bottom: 20px;
         border: none;
         max-width: 655px;
-        box-shadow: 5px 5px 10px $color-secondary;
+        box-shadow: 5px 5px 10px rgb(228, 216, 216);
         transition: all 0.5s ease-in-out;
         cursor: pointer;
         position: relative;
@@ -26,7 +26,7 @@
         }
         &__num {
             display: block;
-            background: $background_deg;
+            background: $color-primary;
             color: $color-white;
             font-size: large;
             padding: 16px 22px 16px 22px;

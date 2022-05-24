@@ -12,6 +12,10 @@
   src: url("Roboto/Roboto-Medium.ttf") format("truetype");
 }
 @font-face {
+  font-family: "roboto-light";
+  src: url("Roboto/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
   font-family: "Shrikhand-Regular";
   src: url("Shrikhand/Shrikhand-Regular.ttf") format("truetype");
 }
@@ -30,8 +34,7 @@ body {
   padding: 5px 0px 5px 0px;
   height: 10%;
   width: 25%;
-  background-color: #99E2D0;
-  opacity: 0.8;
+  background-color: #99e2d0;
   border-radius: 3px;
   position: absolute;
   right: 25px;
@@ -93,6 +96,9 @@ h3 {
   -webkit-mask-size: 100% 100%;
   -moz-mask-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48IS0tISBGb250IEF3ZXNvbWUgUHJvIDYuMS4xIGJ5IEBmb250YXdlc29tZSAtIGh0dHBzOi8vZm9udGF3ZXNvbWUuY29tIExpY2Vuc2UgLSBodHRwczovL2ZvbnRhd2Vzb21lLmNvbS9saWNlbnNlIChDb21tZXJjaWFsIExpY2Vuc2UpIENvcHlyaWdodCAyMDIyIEZvbnRpY29ucywgSW5jLiAtLT48cGF0aCBkPSJNMCAxOTAuOVYxODUuMUMwIDExNS4yIDUwLjUyIDU1LjU4IDExOS40IDQ0LjFDMTY0LjEgMzYuNTEgMjExLjQgNTEuMzcgMjQ0IDg0LjAyTDI1NiA5NkwyNjcuMSA4NC4wMkMzMDAuNiA1MS4zNyAzNDcgMzYuNTEgMzkyLjYgNDQuMUM0NjEuNSA1NS41OCA1MTIgMTE1LjIgNTEyIDE4NS4xVjE5MC45QzUxMiAyMzIuNCA0OTQuOCAyNzIuMSA0NjQuNCAzMDAuNEwyODMuNyA0NjkuMUMyNzYuMiA0NzYuMSAyNjYuMyA0ODAgMjU2IDQ4MEMyNDUuNyA0ODAgMjM1LjggNDc2LjEgMjI4LjMgNDY5LjFMNDcuNTkgMzAwLjRDMTcuMjMgMjcyLjEgLjAwMDMgMjMyLjQgLjAwMDMgMTkwLjlMMCAxOTAuOXoiLz48L3N2Zz4=);
   -moz-mask-size: 100% 100%;
+}
+.carte__infos p {
+  font-family: "roboto-light";
 }
 
 @keyframes loading-body {
@@ -190,8 +196,8 @@ header {
 .form__recherche {
   width: 100%;
   height: 100px;
-  background-color: #99E2D0;
-  background: linear-gradient(to top, #99E2D0, #99E2D0 93%, #FF79DA 99%);
+  background-color: #eaeaea;
+  background: linear-gradient(to top, #eaeaea, #eaeaea 93%, #cfcfcf 99%);
   font-size: x-large;
   border: none;
   display: flex;
@@ -200,7 +206,7 @@ header {
   margin-bottom: 0px;
 }
 .form__recherche i {
-  margin-right: 10px;
+  margin-right: 30px;
 }
 .form__btn {
   color: white;
@@ -211,24 +217,24 @@ header {
   padding: 30px;
   cursor: pointer;
   font-size: larger;
-  box-shadow: 5px 5px 5px #99E2D0;
+  box-shadow: 5px 5px 5px #eaeaea;
   transition: all 0.5s ease-in-out;
 }
 .form__btn:hover {
   transform: scale(1.15);
   opacity: 0.8;
-  box-shadow: 10px 10px 10px #99E2D0;
+  box-shadow: 10px 10px 10px #eaeaea;
 }
 
 form div {
-  background-color: #e6f4fa;
+  background-color: #f6f6f6;
   text-align: center;
   padding: 40px 40px 50px 40px;
   font-size: x-large;
 }
 
 .footer {
-  background-color: grey;
+  background-color: #353535;
   display: flex;
   flex-direction: column;
   padding: 20px 32px 20px 32px;
@@ -258,7 +264,7 @@ form div {
   margin-bottom: 20px;
   border: none;
   max-width: 655px;
-  box-shadow: 5px 5px 10px #FF79DA;
+  box-shadow: 5px 5px 10px rgb(228, 216, 216);
   transition: all 0.5s ease-in-out;
   cursor: pointer;
   position: relative;
@@ -277,7 +283,7 @@ form div {
 }
 .fonctionnement__fonction__num {
   display: block;
-  background: linear-gradient(175deg, #FF79DA, #9356DC);
+  background: #9356DC;
   color: #fff;
   font-size: large;
   padding: 16px 22px 16px 22px;
@@ -330,7 +336,7 @@ form div {
 
 .restaurants {
   padding: 20px 32px 20px 32px;
-  background-color: #e6f4fa;
+  background-color: #f6f6f6;
 }
 .restaurants section {
   display: flex;
@@ -357,7 +363,7 @@ form div {
 }
 
 main {
-  background-color: #e6f4fa;
+  background-color: #f6f6f6;
 }
 
 @keyframes anim-offre {
@@ -373,7 +379,7 @@ main {
 .menu {
   padding: 20px 32px 20px 32px;
   border-radius: 50px 50px 0px 0px;
-  background-color: #e6f4fa;
+  background-color: #f6f6f6;
   position: relative;
   top: -50px;
 }
@@ -427,7 +433,7 @@ main {
 .menu h4::after {
   content: "";
   width: 40px;
-  border: 2px solid #99E2D0;
+  border: 2px solid #eaeaea;
   position: absolute;
   top: 23px;
   left: 0px;
@@ -435,7 +441,7 @@ main {
 .menu__offre {
   background-color: #fff;
   border-radius: 30px;
-  max-height: 115px;
+  max-height: 100px;
   display: flex;
   overflow: hidden;
   align-items: center;
@@ -461,17 +467,20 @@ main {
 .menu__offre__description {
   width: 70%;
   max-height: 115px;
-  font-weight: 100;
   margin: 20px;
   transition: all 0.5s ease-in-out;
+  margin: 0px, 0px, 0px, 0px;
 }
 .menu__offre__description p, .menu__offre__description h3 {
   width: 100%;
-  font-weight: 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   direction: ltr;
+}
+.menu__offre__description p {
+  font-family: "roboto-light";
+  margin-bottom: 0;
 }
 .menu__offre__prix {
   margin: 20px;
@@ -480,10 +489,11 @@ main {
   transition: all 0.5s ease-in-out;
   position: absolute;
   right: 100px;
+  top: 22px;
   text-align: right;
 }
 .menu__offre__check {
-  background-color: #99E2D0;
+  background-color: #eaeaea;
   width: 100px;
   height: 100%;
   transform: translateX(100px);
@@ -496,7 +506,7 @@ main {
   align-items: center;
 }
 .menu__offre__check i {
-  color: #99E2D0;
+  color: #eaeaea;
   background-color: #fff;
   padding: 10px;
   border-radius: 100px;
@@ -545,13 +555,13 @@ main {
   padding: 30px;
   cursor: pointer;
   font-size: larger;
-  box-shadow: 5px 5px 5px #99E2D0;
+  box-shadow: 5px 5px 5px #eaeaea;
   transition: all 0.5s ease-in-out;
 }
 .menu__btn__cmd:hover {
   transform: scale(1.15);
   opacity: 0.8;
-  box-shadow: 10px 10px 10px #99E2D0;
+  box-shadow: 10px 10px 10px #eaeaea;
 }
 
 /*# sourceMappingURL=style.css.map */

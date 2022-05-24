@@ -81,7 +81,7 @@ main {
     &__offre {
         background-color: $color-white;
         border-radius: 30px; 
-        max-height: 115px;  
+        max-height: 100px;  
         display: flex;
         overflow: hidden;
         align-items: center;
@@ -96,20 +96,22 @@ main {
             }
         }       
         &__description {
-            
             width: 70%;
             max-height: 115px;
-            font-weight: 100;
             @include margin_offre;
             transition: all 0.5s ease-in-out;
+            margin: 0px, 0px, 0px, 0px;
 
             & p, h3 {               
                 width: 100%;
-                font-weight: 0;
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
                 direction: ltr;
+            }
+            & p {
+                font-family: 'roboto-light';
+                margin-bottom: 0;
             }
         }
         &__prix {
@@ -119,6 +121,7 @@ main {
             transition: all 0.5s ease-in-out;
             position: absolute;
             right: 100px;
+            top: 22px;
             text-align: right;
             
         }

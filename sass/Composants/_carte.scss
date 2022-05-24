@@ -37,6 +37,9 @@ h3 {
             top: 15%;
             @include coeur;
         }
+        & p {
+            font-family: 'roboto-light';
+        }
     }
     
 }
