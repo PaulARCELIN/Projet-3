@@ -228,7 +228,7 @@ form div {
   background-color: #353535;
   display: flex;
   flex-direction: column;
-  padding: 20px 32px 20px 32px;
+  padding: 20px 65px 20px 65px;
   font-size: large;
 }
 .footer__logo {
@@ -368,7 +368,7 @@ main {
   }
 }
 .menu {
-  padding: 20px 32px 20px 32px;
+  padding: 20px 65px 20px 65px;
   border-radius: 50px 50px 0px 0px;
   background-color: #f6f6f6;
   position: relative;

@@ -1,5 +1,5 @@
 .restaurants {
-    padding: 20px 65px 20px 65px;
+    @include padding;
     background-color: $color-quartary;
     & section {
         display: flex;
