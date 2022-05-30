@@ -40,15 +40,6 @@ $loading-anim-delay : 2.5s;
   }
 }
 
-/* @keyframes jumping-arrows {
-  0% {
-    transform: translateY(0px);
-  }
-  100% {
-    transform: translateY(5px);
-  }
-} */
-
 .loading {
   transform: scale(1.6);
   text-align: center;
@@ -64,7 +55,6 @@ $loading-anim-delay : 2.5s;
     animation: loading-arrows linear 1.5s infinite;
      & i {
       transform: scale(2);
-      /* animation: jumping-arrows 1s infinite alternate-reverse; */
     }
   }
 }
