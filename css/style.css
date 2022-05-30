@@ -137,14 +137,14 @@ h3 {
     transform: translate(0px);
   }
 }
-@keyframes jumping-arrows {
+/* @keyframes jumping-arrows {
   0% {
     transform: translateY(0px);
   }
   100% {
     transform: translateY(5px);
   }
-}
+} */
 .loading {
   transform: scale(1.6);
   text-align: center;
