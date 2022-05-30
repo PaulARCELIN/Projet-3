@@ -1,5 +1,5 @@
 .fonctionnement {
-    padding: 20px 65px 20px 65px;
+    @include padding;
           
     &__fonction {
         padding: 20px;
